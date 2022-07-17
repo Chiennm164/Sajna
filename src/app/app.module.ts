@@ -15,7 +15,7 @@ import { ProductService } from 'services/product.service';
   declarations: [
     AppComponent,
     TemplateSectionComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

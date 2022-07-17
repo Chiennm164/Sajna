@@ -13,16 +13,20 @@ margin-right:-10px ;
 position: relative;
 margin-bottom: 69px;
 }
+
+
 .section-item{
   width: 25%;
-  margin: 0 10px;
+  padding: 0 10px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   display: flex;
   font-family: "Poppins" , sans-serif;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
+
 .section-item-bottom{
   font-family: "Poppins" , sans-serif;
   flex-direction: column;
@@ -32,12 +36,17 @@ display: flex;
 padding: 0 10px;
 }
 .section-item-image{
-  box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 15%);
   position: relative;
 margin-bottom: 20px;
 border: 1px solid  rgb(0 0 0 / 5%) ;
 border-radius: 8px;
 
+}
+.section-item-image:hover{
+
+  box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 30%);
+  transition: all 0.2s linear;
 }
 
 .section-item-image img{
@@ -64,6 +73,8 @@ color: #222;
 margin-bottom: 8px;
 line-height: 36px;
 flex: 1;
+max-height: 100px;
+overflow: hidden;
 }
 .section-item-price{
 font-size: 34px;
@@ -86,12 +97,21 @@ text-align: left
   display: flex;
   align-items: center;
   justify-content: center;
-}
+cursor: pointer;
+opacity: 0.9;
+box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 10%);
 
+}
+.section-item-like:hover{
+opacity: 0.8;
+transition:all 0.1s linear;
+box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 20%);
+
+}
 .icon-like{
   font-size: 20px;
   color: #222;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 
@@ -110,10 +130,20 @@ padding: 10px 15px;
 border: 1px solid #D1D1D1;
 border-radius: 50%;
 display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.7;
-  cursor: pointer;}
+align-items: center;
+justify-content: center;
+opacity: 0.8;
+cursor: pointer;
+box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 15%);
+}
+
+
+.section-btn-slider-left:hover,
+.section-btn-slider-right:hover{
+  box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 20%);
+
+  opacity: 1;
+}
 .section-btn-slider-left{
 
   margin-left: -4%;
@@ -127,8 +157,8 @@ display: flex;
   color: #949494;
   font-size: 25px;
   opacity: 0.7;
-
   }
+
 
 /* css btn */
 .section-btn{
@@ -136,6 +166,7 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .section-btn-viewAll{
 font-size: 18px;
@@ -149,4 +180,13 @@ border: 1px solid #CACACA;
 color: #222222;
 background-color: #fff;
 margin-bottom: 130px;
+cursor: pointer;
+box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 10%);
+
+}
+
+.section-btn-viewAll:hover{
+opacity: 0.7;
+box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 20%);
+
 }

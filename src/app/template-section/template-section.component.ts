@@ -18,14 +18,18 @@ export class TemplateSectionComponent implements OnInit {
   @Input() des:string;
   @Input() products:Array<any>=[]
 
-// arrProduct :Array<any> =[]
+  showListProduct:boolean =false
 
   constructor() { }
   ngOnInit(): void {
 
-
   }
 
+  btnShowAll (){
+    this.showListProduct =true}
 
+  btnClose(){
+    this.showListProduct =false
 
+  }
 }

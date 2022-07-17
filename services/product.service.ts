@@ -15,7 +15,8 @@ private productURL ='https://fakestoreapi.com/products'
 
 getProductsFromAPI(): Observable<Product[]> {
   return this.http.get<Product[]>(this.productURL).pipe(
-    tap(   ),
+    tap(
+      ),
     catchError(error => of([]))
   )
 }

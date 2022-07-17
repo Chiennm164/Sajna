@@ -37,9 +37,18 @@
       <div class="section-slider-right-text2">Women’s baggy pinky outer wear</div>
       <div class="section-slider-right-btn"><a href="">Shop it now</a></div>
       <div class="btn-controll-slide">
-        <div class="btn-controll-slide-item"></div>
-        <div class="btn-controll-slide-item"></div>
-        <div class="btn-controll-slide-item"></div>
+        <div class="btn-controll-slide-item">
+          <div class="btn-controll-slide-item-wrap">
+          </div>
+        </div>
+        <div class="btn-controll-slide-item">
+          <div class="btn-controll-slide-item-wrap">
+          </div>
+        </div>
+        <div class="btn-controll-slide-item">
+          <div class="btn-controll-slide-item-wrap">
+          </div>
+        </div>
       </div>
     </div>
     <div class="section-slider-btn-group">
@@ -57,146 +66,20 @@
   <section class="section-categories">
     <div class="container">
       <div class="section-categories-list-item">
-        <div class="section-categories-item">
-          <div class="section-categories-item-title">Winter wears</div>
-          <div class="section-categories-item-des">Good personality in cold season</div>
+        <div class="section-categories-item" *ngFor="let cate of arrCategorys">
+          <div class="section-categories-item-title">{{cate.title}}</div>
+          <div class="section-categories-item-des">{{cate.des}}</div>
           <div class="section-categories-item-group-product">
-            <div class="product-item">
+            <div class="product-item" *ngFor="let ct of cate.category">
               <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
+                <img src="{{ct.image}}" alt="">
               </div>
               <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
+                <div class="product-item-right-name-product">{{ct.name}}</div>
+                <div class="product-item-right-price-product">{{ct.price}}</div>
               </div>
             </div>
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-          </div>
-          <div class="section-categories-item-link">
-            <a href="">Show Now</a>
-          </div>
-        </div>
-        <div class="section-categories-item">
-          <div class="section-categories-item-title">Winter wears</div>
-          <div class="section-categories-item-des">Good personality in cold season</div>
-          <div class="section-categories-item-group-product">
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-          </div>
-          <div class="section-categories-item-link">
-            <a href="">Show Now</a>
-          </div>
-        </div>
 
-        <div class="section-categories-item">
-          <div class="section-categories-item-title">Winter wears</div>
-          <div class="section-categories-item-des">Good personality in cold season</div>
-          <div class="section-categories-item-group-product">
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-          </div>
-          <div class="section-categories-item-link">
-            <a href="">Show Now</a>
-          </div>
-        </div>
-        <div class="section-categories-item">
-          <div class="section-categories-item-title">Winter wears</div>
-          <div class="section-categories-item-des">Good personality in cold season</div>
-          <div class="section-categories-item-group-product">
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-left">
-                <img src="../assets/images/category/cate1.jpg" alt="">
-              </div>
-              <div class="product-item-right">
-                <div class="product-item-right-name-product">Black leather jacket </div>
-                <div class="product-item-right-price-product">$ 127.00</div>
-              </div>
-            </div>
           </div>
           <div class="section-categories-item-link">
             <a href="">Show Now</a>
@@ -210,30 +93,14 @@
       <h2 class="section-title">Today’s news</h2>
       <p class="section-des">Press releases and multimedia.</p>
       <div class="section-news-content">
-        <div class="section-news-content-item">
-          <img src="../assets/images/news/new1.jpg" alt="" class="section-news-image">
-          <div class="section-news-date">Beauty / july 22, 2021</div>
-          <div class="section-news-title">New York Fashion Show, Looks and More</div>
-          <div class="section-news-des">The only way to do something in depth is to work hard. I like the irony in my
-            work. I like the irony in my work. I love a black dress. Men don’t want another man to look.</div>
+        <div class="section-news-content-item" *ngFor="let n of arrNews">
+          <img src="{{n.image}}" alt="" class="section-news-image">
+          <div class="section-news-date">{{n.date}}</div>
+          <div class="section-news-title">{{n.title}}</div>
+          <div class="section-news-des">{{n.des}}</div>
           <div class="section-news-link"><a href="">Read More</a></div>
         </div>
-        <div class="section-news-content-item">
-          <img src="../assets/images/news/new1.jpg" alt="" class="section-news-image">
-          <div class="section-news-date">Beauty / july 22, 2021</div>
-          <div class="section-news-title">New York Fashion Show, Looks and More</div>
-          <div class="section-news-des">The only way to do something in depth is to work hard. I like the irony in my
-            work. I like the irony in my work. I love a black dress. Men don’t want another man to look.</div>
-          <div class="section-news-link"><a href="">Read More</a></div>
-        </div>
-        <div class="section-news-content-item">
-          <img src="../assets/images/news/new1.jpg" alt="" class="section-news-image">
-          <div class="section-news-date">Beauty / july 22, 2021</div>
-          <div class="section-news-title">New York Fashion Show, Looks and More</div>
-          <div class="section-news-des">The only way to do something in depth is to work hard. I like the irony in my
-            work. I like the irony in my work. I love a black dress. Men don’t want another man to look.</div>
-          <div class="section-news-link"><a href="">Read More</a></div>
-        </div>
+
       </div>
       <div class="section-news-btn-wrap">
         <button class="section-news-btn"> Read news</button>
@@ -243,47 +110,18 @@
   <section class="section-features">
     <div class="container">
       <div class="features-list">
-        <div class="features-item">
+        <div class="features-item" *ngFor="let f of arrFeatures">
           <div class="features-item-wrap">
             <div class="features-item-left">
-              <i class="ti ti-shopping-cart"> </i>
+              <i class="{{f.icon}}"> </i>
             </div>
             <div class="features-item-right">
-              <div class="features-item-right-title">Free delivery</div>
-              <div class="features-item-right-des">Lorem ipsum dolor sit amet, consectetur adipi elit.</div>
+              <div class="features-item-right-title">{{f.title}}</div>
+              <div class="features-item-right-des">{{f.des}}</div>
             </div>
           </div>
         </div>
-        <div class="features-item">
-          <div class="features-item-wrap">
-            <div class="features-item-left">
-            </div>
-            <div class="features-item-right">
-              <div class="features-item-right-title">Free delivery</div>
-              <div class="features-item-right-des">Lorem ipsum dolor sit amet, consectetur adipi elit.</div>
-            </div>
-          </div>
-        </div>
-        <div class="features-item">
-          <div class="features-item-wrap">
-            <div class="features-item-left">
-            </div>
-            <div class="features-item-right">
-              <div class="features-item-right-title">Free delivery</div>
-              <div class="features-item-right-des">Lorem ipsum dolor sit amet, consectetur adipi elit.</div>
-            </div>
-          </div>
-        </div>
-        <div class="features-item">
-          <div class="features-item-wrap">
-            <div class="features-item-left">
-            </div>
-            <div class="features-item-right">
-              <div class="features-item-right-title">Free delivery</div>
-              <div class="features-item-right-des">Lorem ipsum dolor sit amet, consectetur adipi elit.</div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
