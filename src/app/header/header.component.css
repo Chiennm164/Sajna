@@ -1,0 +1,235 @@
+
+/* *************** CSS Header *************** */
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 15.6px;
+  background-color: #fff;
+}
+.container{
+  width: 1600px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #352717;
+  width: 100%;
+  height: 100vh;
+  min-height: 1066px;
+  margin-bottom: 178px;
+}
+.header-wrap{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.nav-bar{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: space-between;
+margin: 64px 0;
+position: absolute;
+}
+.nav{display: flex;
+  align-items: baseline;
+}
+.nav-group{
+  display: flex;
+  margin-right: 90px;
+}
+.nav-group li{
+list-style: none;
+padding:0 12px;
+position: relative;
+margin: 0 12px ;
+z-index: 10 !important;
+}
+.nav-group li a{
+font-family: 'Poppins',sans-serif;
+text-decoration: none;
+color: #352717;
+text-transform: uppercase;
+font-size: 16px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 1px;
+}
+.nav-group li a::before{
+  z-index: -1;
+  display: none;
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  height: 10px;
+  background-color: #F0D0B3;
+}
+.nav-group li:hover  a::before{
+  display: block;
+  }
+.nav-menu i{
+font-size: 20px;
+}
+
+/* *************** CSS Header Billboard *************** */
+
+.billboard{
+  width: 100%;
+height: 100%;
+display: flex;
+}
+.billboard-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   height: 100%;
+   position: relative;
+   margin-top: 190px;
+  }
+
+.billboard-rang-group{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.billboard-left-rang1{
+  background-color: #FFF6EE;
+  width: 491px;
+  height: 491px;
+  border-radius: 50%;
+  position: absolute;
+top:100px;
+bottom: 0;
+left: 100px;
+right: 0;
+
+}
+.billboard-left-rang2{
+  width: 682px;
+  height:682px;
+  border-radius: 50%;
+  border: 1px solid #FCEFE3;
+  position: absolute;
+  top:0;
+  bottom: 0;
+left: 0;
+right: 0;
+}
+
+.billboard-image{
+margin-right: 50px;
+width:  601px;
+height: 776px;
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+}
+/* .billboard-image img{
+
+} */
+.billboard-right{
+  width: 50%;
+color: #F0D0B3;
+display: flex;
+flex-direction: column;
+transform: translateY(50%);
+position: relative;
+margin-top: 190px;
+
+}
+.billboard-right-text1{
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  letter-spacing: calc(18px/5);
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  line-height: 27px;
+  margin-bottom: 60px;
+}
+.billboard-right-text1 p{
+text-align: center  ;
+padding-left: 24px;
+font-family: 'Poppins','sans-serif';
+}
+.billboard-right-text1::before{
+  content: '';
+  height: 1px;
+  width: 70px;
+  background-color: #F0D0B3;
+  position: absolute;
+  left: 0;
+}
+.billboard-right-text2{
+  font-size:  116px;
+  color: #2C2217;
+  /* padding: 40px 0; */
+  line-height: 143px;
+  letter-spacing: -3px;
+  text-align: left;
+  font-family: "Old Standard TT","sans-serif";
+font-weight: bold;
+margin-bottom: 40px;
+
+}
+.billboard-right-text3{
+  width: 75%;
+  font-size: 16px;
+  color: #A68660;
+  line-height: 45px;
+  letter-spacing: 1px;
+ margin-bottom: 70px;
+}
+
+.billboard-right-btn-buy button{
+  border: 1px solid #DBB690;
+  width: 200px;
+  height: 70px;
+  background-color: #DBB690;
+font-size: 18px;
+color: #fff;
+}
+
+/* *************** CSS text-scroll *************** */
+
+
+.text-scroll{
+  display: flex;
+  position: absolute;
+  bottom: 131px;
+  right: 0;
+  align-items: center;
+transform: rotateZ(-90deg);
+color: #DBB690;
+font-size: 14px;
+letter-spacing: 2px;
+text-align: center;
+font-weight: 400;
+text-transform: uppercase;
+
+}
+.text-scroll::before{
+  content: '';
+  height: 1px;
+  width: 70px;
+  background-color: #F0D0B3;
+  position: absolute;
+  left: -70%;
+}

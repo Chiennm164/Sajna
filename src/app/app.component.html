@@ -1,0 +1,372 @@
+<div class="app">
+  <app-header></app-header>
+  <section class="brands">
+    <div class="container">
+      <div class="brands-title">
+        <p>An <span class="textSelect"> exclusive</span> choice of designer brands</p>
+      </div>
+      <div class="brands-content ">
+        <div class="brands-content-items" *ngFor="let url of arrBands"
+          [ngStyle]="{'background-image' :'url(' + url+')'}"> </div>
+      </div>
+    </div>
+  </section>
+  <section class="our_story">
+    <h2 class="section-title">Our story</h2>
+    <p class="section-des">Take a look at our short journey clip.</p>
+    <div class="our_story-video">
+      <div class="our_story-video-wrap">
+        <div class="our_story-video-btnplay">
+          <fa-icon class="icon-play" [icon]="faCirclePlay"></fa-icon>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-template-section [title]='"Latest trends"' [des]='"Always start with perfection"'
+    [products]="productsLatestTrends"></app-template-section>
+  <app-template-section [title]='"Best selling items"' [des]='"Great way to get fashioned in a quick time."'
+    [products]="productsBestSelling">
+  </app-template-section>
+  <section class="quotes">
+    <p>Style is a way to say <span class="textSelect"> who you are</span> without having to speak. </p>
+  </section>
+  <section class="section-slider">
+    <div class="section-slider-left"></div>
+    <div class="section-slider-right">
+      <div class="section-slider-right-text1">Trust your spirit</div>
+      <div class="section-slider-right-text2">Women’s baggy pinky outer wear</div>
+      <div class="section-slider-right-btn"><a href="">Shop it now</a></div>
+      <div class="btn-controll-slide">
+        <div class="btn-controll-slide-item"></div>
+        <div class="btn-controll-slide-item"></div>
+        <div class="btn-controll-slide-item"></div>
+      </div>
+    </div>
+    <div class="section-slider-btn-group">
+      <div class="section-slider-btn-group-left">
+        <i class="ti ti-angle-left icon-click-slider"></i>
+      </div>
+      <div class="section-slider-btn-group-right">
+        <i class="ti ti-angle-right icon-click-slider"></i>
+      </div>
+    </div>
+  </section>
+  <app-template-section [title]='"Top rated products"' [des]='"Always start with perfection and be stylish."'
+    [products]="productsTopRated">
+  </app-template-section>
+  <section class="section-categories">
+    <div class="container">
+      <div class="section-categories-list-item">
+        <div class="section-categories-item">
+          <div class="section-categories-item-title">Winter wears</div>
+          <div class="section-categories-item-des">Good personality in cold season</div>
+          <div class="section-categories-item-group-product">
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="section-categories-item-link">
+            <a href="">Show Now</a>
+          </div>
+        </div>
+        <div class="section-categories-item">
+          <div class="section-categories-item-title">Winter wears</div>
+          <div class="section-categories-item-des">Good personality in cold season</div>
+          <div class="section-categories-item-group-product">
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="section-categories-item-link">
+            <a href="">Show Now</a>
+          </div>
+        </div>
+
+        <div class="section-categories-item">
+          <div class="section-categories-item-title">Winter wears</div>
+          <div class="section-categories-item-des">Good personality in cold season</div>
+          <div class="section-categories-item-group-product">
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="section-categories-item-link">
+            <a href="">Show Now</a>
+          </div>
+        </div>
+        <div class="section-categories-item">
+          <div class="section-categories-item-title">Winter wears</div>
+          <div class="section-categories-item-des">Good personality in cold season</div>
+          <div class="section-categories-item-group-product">
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-left">
+                <img src="../assets/images/category/cate1.jpg" alt="">
+              </div>
+              <div class="product-item-right">
+                <div class="product-item-right-name-product">Black leather jacket </div>
+                <div class="product-item-right-price-product">$ 127.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="section-categories-item-link">
+            <a href="">Show Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-news">
+    <div class="container">
+      <h2 class="section-title">Today’s news</h2>
+      <p class="section-des">Press releases and multimedia.</p>
+      <div class="section-news-content">
+        <div class="section-news-content-item">
+          <img src="../assets/images/news/new1.jpg" alt="" class="section-news-image">
+          <div class="section-news-date">Beauty / july 22, 2021</div>
+          <div class="section-news-title">New York Fashion Show, Looks and More</div>
+          <div class="section-news-des">The only way to do something in depth is to work hard. I like the irony in my
+            work. I like the irony in my work. I love a black dress. Men don’t want another man to look.</div>
+          <div class="section-news-link"><a href="">Read More</a></div>
+        </div>
+        <div class="section-news-content-item">
+          <img src="../assets/images/news/new1.jpg" alt="" class="section-news-image">
+          <div class="section-news-date">Beauty / july 22, 2021</div>
+          <div class="section-news-title">New York Fashion Show, Looks and More</div>
+          <div class="section-news-des">The only way to do something in depth is to work hard. I like the irony in my
+            work. I like the irony in my work. I love a black dress. Men don’t want another man to look.</div>
+          <div class="section-news-link"><a href="">Read More</a></div>
+        </div>
+        <div class="section-news-content-item">
+          <img src="../assets/images/news/new1.jpg" alt="" class="section-news-image">
+          <div class="section-news-date">Beauty / july 22, 2021</div>
+          <div class="section-news-title">New York Fashion Show, Looks and More</div>
+          <div class="section-news-des">The only way to do something in depth is to work hard. I like the irony in my
+            work. I like the irony in my work. I love a black dress. Men don’t want another man to look.</div>
+          <div class="section-news-link"><a href="">Read More</a></div>
+        </div>
+      </div>
+      <div class="section-news-btn-wrap">
+        <button class="section-news-btn"> Read news</button>
+      </div>
+    </div>
+  </section>
+  <section class="section-features">
+    <div class="container">
+      <div class="features-list">
+        <div class="features-item">
+          <div class="features-item-wrap">
+            <div class="features-item-left">
+              <i class="ti ti-shopping-cart"> </i>
+            </div>
+            <div class="features-item-right">
+              <div class="features-item-right-title">Free delivery</div>
+              <div class="features-item-right-des">Lorem ipsum dolor sit amet, consectetur adipi elit.</div>
+            </div>
+          </div>
+        </div>
+        <div class="features-item">
+          <div class="features-item-wrap">
+            <div class="features-item-left">
+            </div>
+            <div class="features-item-right">
+              <div class="features-item-right-title">Free delivery</div>
+              <div class="features-item-right-des">Lorem ipsum dolor sit amet, consectetur adipi elit.</div>
+            </div>
+          </div>
+        </div>
+        <div class="features-item">
+          <div class="features-item-wrap">
+            <div class="features-item-left">
+            </div>
+            <div class="features-item-right">
+              <div class="features-item-right-title">Free delivery</div>
+              <div class="features-item-right-des">Lorem ipsum dolor sit amet, consectetur adipi elit.</div>
+            </div>
+          </div>
+        </div>
+        <div class="features-item">
+          <div class="features-item-wrap">
+            <div class="features-item-left">
+            </div>
+            <div class="features-item-right">
+              <div class="features-item-right-title">Free delivery</div>
+              <div class="features-item-right-des">Lorem ipsum dolor sit amet, consectetur adipi elit.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-newsletter">
+    <div class="container">
+      <div class="newsletter-wrap">
+        <div class="newsletter-title">
+          <h1>
+            Be first to know by <span class="textSelect"> Subscribing Us</span>
+          </h1>
+        </div>
+        <div class="newsletter-group">
+          <input class="newsletter-input" type="text" placeholder="Enter your email address here">
+          <button class="newsletter-btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-logo">
+          <div class="logo">
+            <p class="text-logo">Saijna</p>
+            <p class="text-logo-des">.</p>
+          </div>
+        </div>
+        <div class="footer-about">
+          <div class="footer-about-wrap">
+            <div class="footer-about-item">
+              <div class="footer-about-title"> Pages </div>
+              <div class="footer-about-content">
+                <a href=""> Main Page </a>
+                <a href=""> Our Story </a>
+                <a href=""> Blog </a>
+                <a href=""> Contact Us </a>
+                <a href=""> FAQ </a>
+                <a href=""> Privacy Policy </a>
+              </div>
+            </div>
+
+            <div class="footer-about-item">
+              <div class="footer-about-title"> Shop </div>
+              <div class="footer-about-content">
+                <a href=""> All Collections </a>
+                <a href=""> Collection </a>
+                <a href=""> Product Page </a>
+              </div>
+            </div>
+            <div class="footer-about-item">
+              <div class="footer-about-title"> Profile </div>
+              <div class="footer-about-content">
+                <a href=""> Account </a>
+                <a href=""> Cart </a>
+                <a href=""> Checkout </a>
+              </div>
+            </div>
+            <div class="footer-about-item">
+              <div class="footer-about-title"> Follow Us </div>
+              <div class="footer-about-content">
+                <a href=""> Instagram </a>
+                <a href=""> Facebook </a>
+                <a href=""> Twitter </a>
+                <a href=""> Pinterest </a>
+                <a href=""> Youtube </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-wrap">
+          <div class="footer-bottom-left">
+            © 2021 Templates Jungle. All rights reserved.
+          </div>
+          <div class="footer-bottom-right">
+            Template design by: Templates Jungle
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

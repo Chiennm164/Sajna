@@ -1,0 +1,35 @@
+<section class="template-section">
+  <div class="container">
+    <h2 class="section-title">{{title}}</h2>
+    <p class="section-des">{{des}}</p>
+    <div class="section-list-item" *ngIf="products">
+      <div class="section-item" *ngFor="let product of products.slice(0,4)">
+        <div class="section-item-image ">
+          <img src="{{product.image}}" alt="" class="">
+          <div class="section-item-like">
+            <fa-icon class="icon-like" [icon]="faHeart"></fa-icon>
+          </div>
+        </div>
+
+        <div class="section-item-bottom">
+          <div class="section-item-type">{{product.category}}</div>
+          <div class="section-item-name">{{product.title}}</div>
+          <div class="section-item-price"> $ {{product.price.toFixed(2)}}</div>
+
+        </div>
+
+      </div>
+      <div class="section-btn-slider">
+        <div class="section-btn-slider-left">
+          <fa-icon class="icon-slider" [icon]="faArrowLeft"></fa-icon>
+        </div>
+        <div class="section-btn-slider-right">
+          <fa-icon class="icon-slider" [icon]="faArrowRight"></fa-icon>
+        </div>
+      </div>
+    </div>
+    <div class="section-btn">
+      <button class="section-btn-viewAll">View All</button>
+    </div>
+  </div>
+</section>
